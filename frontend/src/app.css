@@ -1,0 +1,39 @@
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 30px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#app .background {
+  position: absolute;
+  background-color: #02020b;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#app .background-round {
+  position: absolute;
+  background-color: #02020b;
+  height: 180px;
+  width: 100%;
+  top: 0;
+  left: 320px;
+  border-bottom-left-radius: 50px;
+  z-index: -1;
+}
+
+@media (max-width: 590px) {
+  #app {
+    flex-direction: column;
+  }
+  #app .background-round {
+    left: 0;
+    border-bottom-left-radius: 0;
+  }
+}
